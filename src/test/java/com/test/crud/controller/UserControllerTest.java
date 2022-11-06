@@ -7,8 +7,6 @@ import org.junit.jupiter.api.Test;
 
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class UserControllerTest {
     private final UserController userController = new UserController();
 
@@ -23,7 +21,7 @@ class UserControllerTest {
         User user = userController.getUser("0");
 
         // then
-        Assertions.assertThat(user.getNickname()).isEqualTo("a");
+        Assertions.assertThat(user.getUsername()).isEqualTo("a");
     }
 
     @Test
@@ -37,6 +35,6 @@ class UserControllerTest {
     void postUser() {
         userController.postUser("0", "edited", 10);
         User user = userController.getUser("0");
-        Assertions.assertThat(user.getNickname()).isEqualTo("edited");
+        Assertions.assertThat(user.getUsername()).isEqualTo("edited");
     }
 }

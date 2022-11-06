@@ -4,9 +4,14 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
 
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
 @Getter @Setter @AllArgsConstructor
 public class User {
-    private String id;
-    private String nickname;
+    @Id
+    @GeneratedValue
+    private Integer id;
+    private String username;
     private Integer age;
 }

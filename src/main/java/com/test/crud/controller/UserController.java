@@ -16,9 +16,9 @@ public class UserController {
     @PostConstruct
     public void init() {
         userMap = new HashMap<>();
-        userMap.put("0", new User("0", "a", 1));
-        userMap.put("1", new User("1", "b", 2));
-        userMap.put("2", new User("2", "c", 3));
+        userMap.put("0", new User(0, "a", 1));
+        userMap.put("1", new User(1, "b", 2));
+        userMap.put("2", new User(2, "c", 3));
     }
 
     @GetMapping("user/{id}")
@@ -38,7 +38,7 @@ public class UserController {
             @RequestParam("age") Integer age
     ) {
         User user = userMap.get(id);
-        user.setNickname(nickname);
+        user.setUsername(nickname);
         user.setAge(age);
     }
 
