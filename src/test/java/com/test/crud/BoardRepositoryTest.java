@@ -1,7 +1,7 @@
 package com.test.crud;
 
-import com.test.crud.board.model.Board;
-import com.test.crud.board.repository.BoardRepository;
+import com.test.crud.model.Board;
+import com.test.crud.repository.BoardRepository;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

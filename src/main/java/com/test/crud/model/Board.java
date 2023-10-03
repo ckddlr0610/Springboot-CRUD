@@ -1,4 +1,4 @@
-package com.test.crud.board.model;
+package com.test.crud.model;
 
 import lombok.Data;
 

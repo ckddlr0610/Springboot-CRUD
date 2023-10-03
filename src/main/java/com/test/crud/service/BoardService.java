@@ -1,7 +1,7 @@
-package com.test.crud.board.service;
+package com.test.crud.service;
 
-import com.test.crud.board.model.Board;
-import com.test.crud.board.repository.BoardRepository;
+import com.test.crud.model.Board;
+import com.test.crud.repository.BoardRepository;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

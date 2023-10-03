@@ -1,13 +1,11 @@
-package com.test.crud.board.controller;
+package com.test.crud.controller;
 
-import com.test.crud.board.model.Board;
-import com.test.crud.board.service.BoardService;
+import com.test.crud.model.Board;
+import com.test.crud.service.BoardService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.List;
 
 @RestController
 public class BoardController {

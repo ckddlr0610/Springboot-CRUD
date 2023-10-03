@@ -1,8 +1,7 @@
 package com.test.crud.config;
 
-import com.test.crud.board.repository.BoardRepository;
-import com.test.crud.board.repository.jpa.JpaBoardRepository;
-import lombok.RequiredArgsConstructor;
+import com.test.crud.repository.BoardRepository;
+import com.test.crud.repository.jpa.JpaBoardRepository;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

@@ -1,6 +1,6 @@
-package com.test.crud.board.mapper;
+package com.test.crud.mapper;
 
-import com.test.crud.board.model.Board;
+import com.test.crud.model.Board;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

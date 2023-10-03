@@ -1,12 +1,4 @@
-package com.test.crud.board.repository;
-
-import com.test.crud.board.mapper.BoardMapper;
-import com.test.crud.board.model.Board;
-import lombok.RequiredArgsConstructor;
-import org.apache.ibatis.annotations.Param;
-import org.springframework.stereotype.Repository;
-
-import java.util.Optional;
+package com.test.crud.repository;
 
 //@Repository
 //@RequiredArgsConstructor

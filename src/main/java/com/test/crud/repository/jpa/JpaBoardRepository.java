@@ -1,7 +1,7 @@
-package com.test.crud.board.repository.jpa;
+package com.test.crud.repository.jpa;
 
-import com.test.crud.board.model.Board;
-import com.test.crud.board.repository.BoardRepository;
+import com.test.crud.model.Board;
+import com.test.crud.repository.BoardRepository;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;

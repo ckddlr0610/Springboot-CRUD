@@ -1,6 +1,6 @@
-package com.test.crud.board.repository;
+package com.test.crud.repository;
 
-import com.test.crud.board.model.Board;
+import com.test.crud.model.Board;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.Optional;
