@@ -1,7 +1,7 @@
 package com.test.crud;
 
 import com.test.crud.model.Board;
-import com.test.crud.repository.BoardRepository;
+import com.test.crud.repository.BoardRepositoryCopy;
 import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,10 +11,10 @@ import javax.transaction.Transactional;
 
 @Transactional
 @SpringBootTest
-public class BoardRepositoryTest {
+public class BoardRepositoryCopyTest {
 
     @Autowired
-    BoardRepository boardRepository;
+    BoardRepositoryCopy boardRepositoryCopy;
 
     @Test
     void save() {
@@ -22,10 +22,10 @@ public class BoardRepositoryTest {
         Board board = new Board("changik","123","2022-11-11");
 
         //given
-        boardRepository.save(board);
+        boardRepositoryCopy.save(board);
 
         //then
-        Board findBoard = boardRepository.findById(board.getBoardId()).get();
+        Board findBoard = boardRepositoryCopy.findById(board.getBoardId()).get();
         Assertions.assertThat(findBoard).isEqualTo(board);
     }
 

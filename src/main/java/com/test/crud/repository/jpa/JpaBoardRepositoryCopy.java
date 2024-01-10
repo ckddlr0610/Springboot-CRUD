@@ -1,7 +1,7 @@
 package com.test.crud.repository.jpa;
 
 import com.test.crud.model.Board;
-import com.test.crud.repository.BoardRepository;
+import com.test.crud.repository.BoardRepositoryCopy;
 import org.springframework.stereotype.Repository;
 
 import javax.persistence.EntityManager;
@@ -10,11 +10,11 @@ import java.util.Optional;
 
 @Repository
 @Transactional
-public class JpaBoardRepository implements BoardRepository {
+public class JpaBoardRepositoryCopy implements BoardRepositoryCopy {
 
     private final EntityManager entityManager;
 
-    public JpaBoardRepository(EntityManager entityManager) {
+    public JpaBoardRepositoryCopy(EntityManager entityManager) {
         this.entityManager = entityManager;
     }
 

@@ -1,18 +1,14 @@
 package com.test.crud;
 
-import com.test.crud.config.JpaConfig;
-import com.test.crud.config.MyBatisConfig;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.context.annotation.Import;
 
-@Import(JpaConfig.class)
-@SpringBootApplication(exclude = DataSourceAutoConfiguration.class)
-public class CrudApplication {
-
+@SpringBootApplication
+public class BoardApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(CrudApplication.class, args);
+		SpringApplication.run(BoardApplication.class, args);
 	}
 
 }

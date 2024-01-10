@@ -15,7 +15,7 @@ import java.sql.DriverManager;
 
 @WebAppConfiguration
 @SpringBootTest
-class CrudApplicationTests {
+class BoardApplicationTests {
 	private static final String DRIVER = "com.mysql.cj.jdbc.Driver";
 	private static final String URL = "jdbc:mysql://localhost:5252/userdb";
 	private static final String USER = "root";
